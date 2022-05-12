@@ -1,0 +1,75 @@
+name: "passerium"
+title: "passerium"
+theme: theme.css
+description: |
+  passerium
+output_dir: "_site"
+navbar:
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: wysiwyg.html
+    - text: "WYSIWYG?"
+      menu:
+        - text: "Portfolio Overview"
+          href: wysiwyg.html
+        - text: "--------------"
+        - text: "Foodprint"
+          href: foodprint.html
+        - text: "Shiver Me Timbers"
+          href: shivermetimbers.html
+        - text: "Precip Perchance"
+          href: precip.html
+        - text: "Trickle-Trickster"
+        #  href: publish_article.html
+        - text: "Scada-Mata"
+          href: scadamata.html
+        - text: "Carto-Credo (R,QGIS)"
+          href: cartocredo.html
+        - text: "Moz-Art"
+          href: mozart.html
+    - text: "Porifera"
+      menu:
+        - text: "qin ~~"
+          href: qin.html
+        - text: "WWWtf"
+          #href: publish_website.html
+    - text: "Wunderkammer"
+      menu:
+        - text: "naturalia"
+          href: naturalia.html
+        - text: "artificialia"
+          #href: publish_article.html
+        - text: "mirabilia"
+          #href: publish_article.html unusual natural phenomena
+        - text: "ethnographica"
+          #href: publish_article.html from the wider world
+        - text: "artefacta"
+          href: https://www.hku.hk/f/news/13739/151215_bono4.pdf
+        - text: "scientifica"
+          #href: publish_article.htmltems that brought a great understanding of the universe
+    - text: "Cache"
+      menu:
+        - text: "Scratch pad"
+          href: scratchpad.html
+        - text: "Scrap patch"
+          href: scrappatch.html
+        - text: "Translate"
+          href: kraus_last.html
+        #- text: "Distances"
+          #href: publish_article.html
+        #- text: "\'Character\'-bildungsroman\'"
+          #href: publish_website.html
+    - icon: fab fa-github
+      href: https://github.com/jjyh
+
+#By default, all files within the website directory are copied into the output directory (e.g. “_site”) save for the following:#
+#-Files beginning with "." (hidden files).
+#-Files beginning with "_"
+#-Files known to contain R source code (e.g. ".R", ".s", ".Rmd"), R data (e.g. ".RData", ".rds"), or configuration data (e.g. "rsconnect" ,"packrat")).
+#also can be overridden by:
+#include: ["import.R"]
+#exclude: ["docs.txt", "*.csv"]
+
+output: distill::distill_article
